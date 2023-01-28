@@ -29,7 +29,7 @@ public class ExchangeRateService : IExchangeRateService
 
     public async Task<IEnumerable<ExchangeRateDTO>> GetExchangeRate(KeyValuePair<string, string> currencyCodes,
         DateTime startDate, DateTime endDate)
-    {
+    { 
         var httpClient = _httpClientFactory.CreateClient("ECB_SDMX");
 
         var startDateString = startDate.ToString("yyyy-MM-dd");
