@@ -34,7 +34,7 @@ public class ExchangeRateService : IExchangeRateService
 
         var startDateString = startDate.ToString("yyyy-MM-dd");
         var endDateString = endDate.ToString("yyyy-MM-dd");
-
+  
         XmlDocument currencyRate = new XmlDocument();
         var stringUrl = $"https://sdw-wsrest.ecb.europa.eu/service/data/EXR/"+
                         $"D.{currencyCodes.Key}.{currencyCodes.Value}.SP00.A" +
