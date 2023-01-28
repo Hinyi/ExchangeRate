@@ -42,7 +42,7 @@ public class ExchangeRateService : IExchangeRateService
                         $"&endPeriod={endDateString}" +
                         $"&detail=dataonly";
         
-        currencyRate.Load(stringUrl);
+        currencyRate.Load(stringUrl); 
  
         XmlNodeList nodeList;
         XmlNodeList nodeList1;
