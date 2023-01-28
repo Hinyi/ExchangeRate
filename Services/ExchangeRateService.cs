@@ -43,7 +43,7 @@ public class ExchangeRateService : IExchangeRateService
                         $"&detail=dataonly";
         
         currencyRate.Load(stringUrl);
-
+ 
         XmlNodeList nodeList;
         XmlNodeList nodeList1;
         XmlNode root = currencyRate.DocumentElement.FirstChild.NextSibling.FirstChild.FirstChild;
